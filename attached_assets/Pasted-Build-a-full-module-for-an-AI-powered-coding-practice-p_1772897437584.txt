@@ -1,0 +1,236 @@
+
+
+The module will integrate with an existing Monaco code editor that another developer built.
+
+My module starts after the code editor and handles:
+
+Problems page
+Problem descriptions
+Test case evaluation
+Static analysis
+AI feedback
+
+-------------------------------------
+
+UI DESIGN
+
+Create a dark theme coding platform similar to LeetCode.
+
+Colors:
+Background: deep navy (#0f172a)
+Cards: dark slate (#1e293b)
+Accent: purple gradient (#8b5cf6)
+
+Rounded cards, modern coding dashboard style.
+
+-------------------------------------
+
+PAGE 1 — PROBLEMS PAGE
+
+Title:
+Practice Problems
+
+Include a search bar.
+
+Include difficulty filters:
+All
+Easy
+Medium
+Hard
+
+List problems as cards.
+
+Each card should show:
+icon
+problem title
+topic
+difficulty badge
+
+Example problems:
+
+Two Sum — Arrays — Easy  
+Reverse String — Strings — Easy  
+FizzBuzz — Loops — Easy  
+Fibonacci Number — Recursion — Easy  
+Maximum Subarray — Dynamic Programming — Hard  
+Climbing Stairs — Dynamic Programming — Medium  
+Valid Parentheses — Strings — Medium  
+Merge Sorted Array — Sorting — Medium
+
+-------------------------------------
+
+PAGE 2 — PRACTICE PAGE
+
+Split layout.
+
+LEFT PANEL
+
+Tabs:
+
+Description
+Results
+AI Feedback
+
+RIGHT PANEL
+
+Large container for Monaco code editor.
+
+-------------------------------------
+
+DESCRIPTION TAB
+
+Show:
+
+problem title
+difficulty badge
+topic badge
+
+problem description
+
+examples
+
+constraints
+
+Example:
+
+Given an integer n, return a string array answer where answer[i] is:
+
+"FizzBuzz" if divisible by 3 and 5
+"Fizz" if divisible by 3
+"Buzz" if divisible by 5
+otherwise the number.
+
+Example Input:
+n = 3
+
+Output:
+["1","2","Fizz"]
+
+-------------------------------------
+
+RESULTS TAB
+
+When user clicks Submit Solution:
+
+Run predefined test cases.
+
+Display:
+
+0/3 Tests Passed
+
+Runtime: 35ms
+Memory: 11.2MB
+
+Cards:
+
+Quality Score
+Example: 1/5
+
+Efficiency
+Example: Inefficient
+
+Detected Issue
+Example:
+Logic missing / Incomplete code
+
+-------------------------------------
+
+STATIC ANALYSIS SECTION
+
+Show metrics:
+
+Complexity
+Loop Depth
+Lines
+Functions
+
+Example:
+
+Complexity: 1
+Loop Depth: 0
+Lines: 2
+Functions: 1
+
+-------------------------------------
+
+AI FEEDBACK TAB
+
+Generate three sections.
+
+AI Explanation
+
+Explain what is wrong with the code.
+
+Suggested Approach
+
+Explain how to solve the problem step-by-step.
+
+Think About This
+
+Ask a conceptual question.
+
+Example:
+
+AI Explanation:
+
+The submission is an empty function and does not implement the logic.
+
+Suggested Approach:
+
+Initialize an empty list.
+Loop from 1 to n.
+Check divisibility using modulo operator.
+
+Think About This:
+
+In Python, which operator checks divisibility?
+
+-------------------------------------
+
+BACKEND
+
+Create a Node.js + Express backend.
+
+Endpoint:
+
+POST /evaluate
+
+Input:
+
+{
+ code: string
+ problemId: string
+}
+
+Backend should:
+
+run test cases
+count passed tests
+estimate complexity
+generate quality score
+return evaluation results
+generate AI feedback
+
+-------------------------------------
+
+TECH STACK
+
+Frontend:
+React + TailwindCSS
+
+Backend:
+Node.js + Express
+
+-------------------------------------
+
+OUTPUT
+
+Generate full project folder:
+
+frontend/
+backend/
+problem dataset
+evaluation engine
+AI feedback module
+
+Code must be downloadable and editable.
