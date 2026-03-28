@@ -2,6 +2,18 @@
 import pool from '../config/db.js'; // ✅ Modern style // Adjust this path to your db connection file
 
 describe('Database Connection Health Check', () => {
+  beforeAll(async () => {
+    // Create the table so the test has something to find!
+    await pool.query(`
+      CREATE TABLE IF NOT EXISTS questions (
+        question_id UUID PRIMARY KEY,
+        title TEXT,
+        question_type TEXT
+      );
+    `);
+  });
+
+
   // Close the pool after tests so the process exits
   afterAll(async () => {
     await pool.end();
