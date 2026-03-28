@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // 1. Matches your 'questions' and 'mcq_options' table attributes
-export interface Question {
+interface Question {
   question_id: string;   
   topic_id: string;
   question_type: 'mcq' | 'coding';
