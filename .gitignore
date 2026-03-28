@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies (Covers both frontend and server)
 node_modules/
 jspm_packages/
@@ -35,3 +36,11 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+=======
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+>>>>>>> codeval_sudharsana
