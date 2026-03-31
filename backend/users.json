@@ -1,0 +1,88 @@
+{
+  "1": {
+    "name": "Kaniga",
+    "xp": 999,
+    "level": 10,
+    "streak": 15,
+    "problemsSolved": 7,
+    "topicsProgress": {
+      "Arrays": 95,
+      "Strings": 88,
+      "Hash Maps": 77,
+      "Recursion": 66,
+      "Dynamic Prog": 55,
+      "Trees": 99
+    },
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 15,
+      "Hard": 7
+    },
+    "badges": [
+      { "title": "First 100 Problems", "description": "Solved your first 100 coding problems" },
+      { "title": "15 Day Streak", "description": "Practiced coding for 15 days in a row" },
+      { "title": "Speed Demon", "description": "Solved a problem in under 3 minutes" },
+      { "title": "Tree Master", "description": "Solved 30 tree problems" }
+    ],
+    "suggestedPractice": [
+      { "topic": "Graphs", "problems": 4, "level": "Hard" },
+      { "topic": "Dynamic Prog", "problems": 3, "level": "Hard" }
+    ]
+  },
+  "2": {
+    "name": "Rahul",
+    "xp": 750,
+    "level": 8,
+    "streak": 10,
+    "problemsSolved": 5,
+    "topicsProgress": {
+      "Arrays": 80,
+      "Strings": 70,
+      "Hash Maps": 65,
+      "Recursion": 50,
+      "Dynamic Prog": 60,
+      "Trees": 85
+    },
+    "difficultyDistribution": {
+      "Easy": 15,
+      "Medium": 10,
+      "Hard": 5
+    },
+    "badges": [
+      { "title": "First 50 Problems", "description": "Solved your first 50 coding problems" },
+      { "title": "10 Day Streak", "description": "Practiced coding for 10 days in a row" }
+    ],
+    "suggestedPractice": [
+      { "topic": "Strings", "problems": 2, "level": "Medium" },
+      { "topic": "Recursion", "problems": 3, "level": "Medium" }
+    ]
+  },
+  "3": {
+    "name": "Sneha",
+    "xp": 500,
+    "level": 6,
+    "streak": 5,
+    "problemsSolved": 3,
+    "topicsProgress": {
+      "Arrays": 75,
+      "Strings": 65,
+      "Hash Maps": 60,
+      "Recursion": 55,
+      "Dynamic Prog": 50,
+      "Trees": 80
+    },
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 8,
+      "Hard": 2
+    },
+    "badges": [
+      { "title": "First 30 Problems", "description": "Solved your first 30 coding problems" },
+      { "title": "5 Day Streak", "description": "Practiced coding for 5 days in a row" }
+    ],
+    "suggestedPractice": [
+      { "topic": "Arrays", "problems": 3, "level": "Easy" },
+      { "topic": "Trees", "problems": 2, "level": "Medium" }
+    ]
+  }
+}
